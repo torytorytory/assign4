@@ -54,8 +54,8 @@ void setup(){
   randomP=floor(random(100));  
   start2= loadImage("img/start1.png");
   start1= loadImage("img/start2.png");
-  end1= loadImage("img/end1.png");
-  end2= loadImage("img/end2.png");
+  end2= loadImage("img/end1.png");
+  end1= loadImage("img/end2.png");
   Fightership= loadImage("img/fighter.png");
   Enemyship = loadImage("img/enemy.png");
   bg1 = loadImage("img/bg1.png");
@@ -262,7 +262,7 @@ void draw(){
     
      
       for (int i=0;i<emyNum;i++){
-        if ((frameCount-boomDATA[i][3])<30)
+        if ((frameCount-boomDATA[i][3])<60)
         {
           int f = (currentFrame ++) % numFrames;
           image(flame[f],boomDATA[i][0],boomDATA[i][1]);          
